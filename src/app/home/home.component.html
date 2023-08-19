@@ -1,0 +1,33 @@
+<div class="header">
+    <app-header></app-header>
+</div>
+<hr>
+<div class="body" *ngIf="products">
+    <p class="home_title">Our Products</p>
+<hr>
+<ng-container *ngFor="let product of products" >
+    <div class="card">
+        <mat-card class="example-card">
+            <img mat-card-image src={{product.Image}} alt="Photo of Product">
+            <mat-card-content>
+                <pre></pre>
+                Product Name:- {{product.Name}}
+                <br>
+                Price:- {{product.Price | currency:'INR'}}
+                <br>
+                Description:- {{product.Description}}
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button color="warn" (click)="addToCart(product)">Add to Cart</button>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+</ng-container>
+</div>
+<div class="body" *ngIf="!products">
+    <p class="home_title">No Products Available Or JSON Server is Down</p>
+    <hr>
+</div>
+<div class="footer">
+    <app-footer></app-footer>
+</div>

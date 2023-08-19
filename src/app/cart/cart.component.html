@@ -1,0 +1,54 @@
+<div class="header">
+    <app-header></app-header>
+</div>
+
+<div class="body">
+    <div class="product" *ngIf="cartProduct?.length>0">
+        <h1>
+            Products Added to cart
+        </h1>
+        <table>
+            <th>
+                <h2>Product Name</h2>
+            </th>
+            <th>
+                <h2>Product Image</h2>
+            </th>
+            <th>
+                <h2>Product Price</h2>
+            </th>
+            <th><h2>Remove Product</h2></th>
+            <ng-container *ngFor="let product of cartProduct">
+                <tr>
+                    <td>
+                        <h2>{{product.Name}}</h2>
+                    </td>
+                    <td><img mat-card-image src={{product.Image}} alt="Photo of Product" class="Image"></td>
+                    <td>
+                        <h2>{{product.Price|currency:"INR"}}</h2>
+                    </td>
+                    <td>
+                        <button mat-raised-button color="warn" (click)="removeFromCart(product)">Remove</button>
+                    </td>
+                </tr>
+            </ng-container>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <h2>Total Price:- {{totalPrice|currency:"INR"}}</h2>
+                </td>
+                <td></td>
+        </table>
+    </div>
+    <div class="product" *ngIf="cartProduct?.length==0||!cartProduct">
+        <h1>
+            No Products Added to cart
+        </h1>
+    </div>
+    
+</div>
+
+<div class="footer">
+    <app-footer></app-footer>
+</div>

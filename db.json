@@ -1,0 +1,68 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "Name": "Shirt",
+      "Price": 1000,
+      "Description": "This is a shirt",
+      "Image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80 "
+    },
+    {
+      "id": 2,
+      "Name": "Pant",
+      "Price": 2000,
+      "Description": "This is a pant",
+      "Image": "https://images.unsplash.com/photo-1556488161-f2b636bab6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80"
+    },
+    {
+      "id": 3,
+      "Name": "Shoe",
+      "Price": 3000,
+      "Description": "This is a shoe",
+      "Image": "https://images.unsplash.com/photo-1561909848-977d0617f275?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+    },
+    {
+      "id": 4,
+      "Name": "Watch",
+      "Price": 4000,
+      "Description": "This is a watch",
+      "Image": "https://images.unsplash.com/photo-1506796684999-9fa2770af9c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+    },
+    {
+      "id": 5,
+      "Name": "Belt",
+      "Price": 5000,
+      "Description": "This is a belt",
+      "Image": "https://images.unsplash.com/photo-1664285612706-b32633c95820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=958&q=80"
+    },
+    {
+      "id": 6,
+      "Name": "Tie",
+      "Price": 6000,
+      "Description": "This is a tie",
+      "Image": "https://images.unsplash.com/photo-1533462506003-13c20d204b58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 7,
+      "Name": "Socks",
+      "Price": 7000,
+      "Description": "This is a socks",
+      "Image": "https://images.unsplash.com/photo-1621840184751-5ce0352e9c17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": 8,
+      "Name": "Cap",
+      "Price": 8000,
+      "Description": "This is a cap",
+      "Image": "https://images.unsplash.com/photo-1466992133056-ae8de8e22809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2108&q=80"
+    },
+    {
+      "id": 9,
+      "Name": "Jacket",
+      "Price": 9000,
+      "Description": "This is a jacket",
+      "Image": "https://images.unsplash.com/photo-1641614838518-550c04b15a69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    }
+  ],
+  "Cart": []
+}

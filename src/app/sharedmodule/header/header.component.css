@@ -1,0 +1,14 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+.nav{
+    justify-content: space-between;
+}
+.nav button{
+    margin-left: 1em;
+}
+.user{
+    display: block;
+    line-height: 0%;
+    font-size: 10px;
+}
