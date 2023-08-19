@@ -8,14 +8,14 @@
 <ng-container *ngFor="let product of products" >
     <div class="card">
         <mat-card class="example-card">
-            <img mat-card-image src={{product.Image}} alt="Photo of Product">
+            <img mat-card-image src={{product?.Image}} alt="Photo of Product">
             <mat-card-content>
                 <pre></pre>
-                Product Name:- {{product.Name}}
+                Product Name:- {{product?.Name}}
                 <br>
-                Price:- {{product.Price | currency:'INR'}}
+                Price:- {{product?.Price | currency:'INR'}}
                 <br>
-                Description:- {{product.Description}}
+                Description:- {{product?.Description}}
             </mat-card-content>
             <mat-card-actions>
               <button mat-raised-button color="warn" (click)="addToCart(product)">Add to Cart</button>
@@ -24,7 +24,7 @@
     </div>
 </ng-container>
 </div>
-<div class="body" *ngIf="!products">
+<div class="body" *ngIf="!products||products?.length==0">
     <p class="home_title">No Products Available Or JSON Server is Down</p>
     <hr>
 </div>

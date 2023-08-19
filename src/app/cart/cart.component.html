@@ -21,11 +21,11 @@
             <ng-container *ngFor="let product of cartProduct">
                 <tr>
                     <td>
-                        <h2>{{product.Name}}</h2>
+                        <h2>{{product?.Name}}</h2>
                     </td>
-                    <td><img mat-card-image src={{product.Image}} alt="Photo of Product" class="Image"></td>
+                    <td><img mat-card-image src={{product?.Image}} alt="Photo of Product" class="Image"></td>
                     <td>
-                        <h2>{{product.Price|currency:"INR"}}</h2>
+                        <h2>{{product?.Price|currency:"INR"}}</h2>
                     </td>
                     <td>
                         <button mat-raised-button color="warn" (click)="removeFromCart(product)">Remove</button>
