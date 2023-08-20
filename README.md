@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
+##Steps to Run the Project 
+
+Step 1: Clone the repo `https://github.com/shakir2117/shopping-app.git`
+
+Step 2: Open Project in Vs code and run `npm install` or if any issue occurs ` npm install -f`.
+
+Step 3: Run `ng serve` command to run the angular project
+
+Step 4: Run `json-server --watch db.json` to run the json server api for dummy data API request.
+
+Step 5: Navigate to `http://localhost:4200/`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
