@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
-##Steps to Run the Project 
+Steps to Run the Project 
 
 Step 1: Clone the repo `https://github.com/shakir2117/shopping-app.git`
 
