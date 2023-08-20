@@ -64,5 +64,25 @@
       "Image": "https://images.unsplash.com/photo-1641614838518-550c04b15a69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
     }
   ],
-  "Cart": []
+  "Cart": [
+    {
+      "id": 2,
+      "Name": "Pant",
+      "Price": 2000,
+      "Description": "This is a pant",
+      "Image": "https://images.unsplash.com/photo-1556488161-f2b636bab6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80"
+    }
+  ],
+  "user": [
+    {
+      "firstName": "shakir",
+      "lastName": "choudhary",
+      "mobileno": "9323789527",
+      "email": "shakirchoudhary2117@gmail.com",
+      "address": "mumbai",
+      "age": 23,
+      "dob": "2023-08-24T18:30:00.000Z",
+      "id": 1
+    }
+  ]
 }

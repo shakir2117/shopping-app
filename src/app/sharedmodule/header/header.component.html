@@ -9,14 +9,15 @@
                 <button mat-raised-button routerLink="/cart">
                     <mat-icon>shopping_cart</mat-icon>
                     Cart</button>
+                <button mat-raised-button routerLink="/userlist">
+                    <mat-icon>account_box</mat-icon>
+                    Saved User</button>
+                <button mat-raised-button matTooltip="Add user" (click)="userDialog()">
+                        <mat-icon>add</mat-icon>
+                        Add User
+                </button>
             </ng-container>
         </span>
 
-        <span>
-            <ng-container>
-                <button mat-icon-button matTooltip="Add user">
-                    <mat-icon>add</mat-icon></button>
-            </ng-container>
-        </span>
     </mat-toolbar>
 </p>

@@ -25,6 +25,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { AppModule } from '../app.module';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 
@@ -63,6 +65,8 @@ const MaterialComponents=[
   MatSortModule,
   MatPaginatorModule,
   MatTooltipModule,
+  MatDatepickerModule,
+  MatNativeDateModule
   
 ]
 

@@ -1,0 +1,48 @@
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .userForm{
+    width: 70%;
+    margin: 0 auto;
+    border: #000000 2px solid;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .form{
+    overflow: hidden;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .buttons{
+    display: flex;
+    margin: 0 auto;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button 
+  {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.mobilehint{
+    margin-right: 10px;
+}
+  

@@ -1,0 +1,74 @@
+<div class="view">
+    <div class="header">
+        <app-header></app-header>
+    </div>
+    <div class="body">
+        <div class="user" *ngIf="users?.length>0">
+            <h1>
+                Uses List
+            </h1>
+            <table>
+                <th>
+                    <h2>FirstName</h2>
+                </th>
+                <th>
+                    <h2>LastName</h2>
+                </th>
+                <th>
+                    <h2>Phone No.</h2>
+                </th>
+                <th>
+                    <h2>Email</h2>
+                </th>
+                <th>
+                    <h2>Address</h2>
+                </th>
+                <th>
+                    <h2>BirthDate</h2>
+                </th>
+                <th>
+                    <h2>Age</h2>
+                </th>
+                <th>
+                    <h2>Delete</h2>
+                </th>
+                <ng-container *ngFor="let user of users">
+                    <tr>
+                        <td>
+                            <h2>{{user?.firstName|titlecase}}</h2>
+                        </td>
+                        <td>
+                            <h2>{{user?.lastName|titlecase}}</h2>
+                        </td>
+                        <td>
+                            <h2>+91-{{user?.mobileno}}</h2>
+                        </td>
+                        <td>
+                            <h2>{{user?.email}}</h2>
+                        </td>
+                        <td>
+                            <h2>{{user?.address|titlecase}}</h2>
+                        </td>
+                        <td>
+                            <h2>{{user?.dob|date: 'dd/MM/yyyy'}}</h2>
+                        </td>
+                        <td>
+                            <h2>{{user?.age}}</h2>
+                        </td>
+                        <td>
+                            <button mat-raised-button color="warn" (click)="deleteUser(user)">Delete</button>
+                        </td>
+                    </tr>
+                </ng-container>
+            </table>
+        </div>
+        <div class="nodata" *ngIf="users?.length==0||!users">
+            <h1>
+                Uses List is Empty
+            </h1>
+        </div>
+    </div>
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
+</div>

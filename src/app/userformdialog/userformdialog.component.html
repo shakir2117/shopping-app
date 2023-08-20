@@ -1,0 +1,89 @@
+<h2 mat-dialog-title></h2>
+<div mat-dialog-content class="form">
+    <form [formGroup]="userForm" class="userForm">
+        <div class="col">
+            <div class="row">
+                <mat-form-field class="field1" appearance="outline">
+                    <mat-label>FirstName</mat-label>
+                    <input type="text" matInput formControlName="firstName">
+                    <mat-error *ngIf="userForm.controls['firstName'].hasError('required')">
+                        FirstName is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field class="field2" appearance="outline">
+                    <mat-label>LastName</mat-label>
+                    <input type="text" matInput formControlName="lastName">
+                    <mat-error *ngIf="userForm.controls['lastName'].hasError('required')">
+                        LastName is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <div class="row">
+                    <mat-form-field class="field3" appearance="outline">
+                        <mat-label>Mobile No.</mat-label>
+                        <input type="text" matInput #mobileno formControlName="mobileno" placeholder="Phone number (+91)">
+                        <mat-hint align="end" matSuffix class="mobilehint">{{mobileno.value.length}} / 10</mat-hint>
+                        <mat-error *ngIf="userForm.controls['mobileno'].hasError('required')">
+                            Mobile No. is <strong>required</strong>
+                        </mat-error>
+                        <mat-error *ngIf="userForm.controls['mobileno'].hasError('minLength')">
+                            Mobile No. Should be of <strong>10 Digits</strong>
+                        </mat-error>
+                        <mat-error *ngIf="userForm.controls['mobileno'].hasError('maxLength')">
+                            Mobile No. Should be of <strong>10 Digits</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <mat-form-field class="field4" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="text" matInput formControlName="email">
+                        <mat-error *ngIf="userForm.controls['email'].hasError('required')">
+                            Email is <strong>required</strong>
+                        </mat-error>
+                        <mat-error *ngIf="userForm.controls['email'].hasError('email')">
+                            Please enter a <strong>valid</strong> email address
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <mat-form-field class="field5" appearance="outline">
+                        <mat-label>Address:</mat-label>
+                        <input type="text" matInput formControlName="address">
+                        <mat-error *ngIf="userForm.controls['address'].hasError('required')">
+                            Address is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Date of Birth</mat-label>
+                        <input matInput [matDatepicker]="dob" (dateInput)="calculateAge($event.value)" [max]="maxDate" [min]="minDate" formControlName="dob" readonly="true">
+                        <mat-datepicker-toggle matSuffix [for]="dob" ></mat-datepicker-toggle>
+                        <mat-datepicker #dob startView="multi-year"></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="row">
+                    <mat-form-field class="field" appearance="outline">
+                        <mat-label>Age:</mat-label>
+                        <input type="number" matInput formControlName="age">
+                        <mat-error *ngIf="userForm.controls['age'].hasError('required')">
+                            Age is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <div class='buttons'>
+        <button type="button" mat-dialog-close mat-icon-button color="warn"><mat-icon>close</mat-icon></button>
+        <button type="submit" cdkFocusInitial mat-icon-button color="accent"
+            (click)="onSubmit(userForm.value)">
+            <mat-icon>save</mat-icon></button>
+    </div>
+</div>
